@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  margin: 5em 1.5em;
+}
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 15px 20px hsla(224, 26%, 63%, 0.75);
+}
+
+.graphics {
+  width: 100%;
+}
+
+.graphics img {
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 1.5em 2em;
+}
+
+.main-text {
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 1.5rem;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.main-para {
+  font-size: 0.95rem;
+  margin: 0.75em 1em 2em;
+  line-height: 1.5rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.music-icon {
+  margin-right: 1.25em;
+}
+
+.plan-validity {
+  font-size: 0.9rem;
+
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-charges {
+  font-size: 0.9rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.change-plan-btn {
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  transition: opacity 0.1s linear;
+}
+
+button {
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.proceed {
+  margin: 1.5em 0 1em;
+  padding: 1em 0;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px hsla(224, 26%, 63%, 0.75);
+  transition: opacity 0.1s linear;
+}
+
+.proceed:hover,
+.proceed:focus,
+.change-plan-btn:hover,
+.change-plan-btn:focus {
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.cancel {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: hsl(224, 23%, 55%);
+  transition: color 0.1s linear;
+}
+
+.cancel:hover,
+.cancel:focus {
+  color: hsl(223, 47%, 23%);
+}
