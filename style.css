@@ -12,11 +12,14 @@ body {
   font-size: 16px;
   background-image: url("./images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   background-color: hsl(225, 100%, 94%);
 }
 
 .container {
   margin: 5em 1.5em;
+  display: grid;
+  place-content: center;
 }
 
 .card {
@@ -24,6 +27,7 @@ body {
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0px 15px 20px hsla(224, 26%, 63%, 0.75);
+  max-width: calc(375px - 3em);
 }
 
 .graphics {
@@ -135,4 +139,10 @@ button {
 .cancel:hover,
 .cancel:focus {
   color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
 }
